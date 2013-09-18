@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Problema WebDev</title>
+    <script type="text/javascript" src="WebDev.js"></script>
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+</head>
+<body>
+   <span>
+       <strong>
+           Selectati functiile:
+       </strong>
+       <div id="selectedFunctions">
+           <input type="checkbox" id="add_one" value="function">Add_one<br>
+           <input type="checkbox" id="multiply_by_five">Multiply_by_five<br>
+           <input type="checkbox" id="multiply_by_two">Multiply_by_two<br>
+           <input type="checkbox" id="substract_five">Substract_five<br>
+           <input type="checkbox" id="substract_three">Substract_three<br>
+           <input type="checkbox" id="add_two">Add_two<br>
+       </div>
+       <div>
+            <strong>
+                Introduceti numarul:
+            </strong>
+            <input type="text" id="no">
+       </div>
+
+   </span>
+   <br>
+
+
+   <div id="response" hidden="hidden">
+   <span>
+        Rezultatele aplicarii functiilor sunt:
+   </span>
+   <br>
+    <div id="results">
+    </div>
+   </div>
+
+<div id="submit">
+    <input type="submit" onclick="mainFunction()">
+</div>
+</body>
+</html>
