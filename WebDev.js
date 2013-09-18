@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Raluca
- * Date: 9/17/13
- * Time: 3:00 PM
- * To change this template use File | Settings | File Templates.
- */
 
 function applyFunctions(i, functions) {
     var results = [];
