@@ -1,4 +1,3 @@
-
 ---------------------------------------------------------------------------------- 
 
 Am ales sa rezolv problema in JavaScript deoarece este un limbaj de programare web 
@@ -7,5 +6,5 @@ vector de functii pe care l-am trimis functiei applyFunctions impreuna cu valoar
 asupra careia se aplica functiile.
 
 Pentru testare am facut o interfata in html in care utilizatorul poate selecta un 
-numar de functii si poate introduce un numar asupa caruia sa se aplice acestea. 
+numar de functii si poate introduce un numar asupra caruia sa se aplice acestea. 
 Valorile rezultate sunt afisate in interfata.  
