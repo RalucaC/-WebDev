@@ -1,0 +1,11 @@
+
+---------------------------------------------------------------------------------- 
+
+Am ales sa rezolv problema in JavaScript deoarece este un limbaj de programare web 
+care permite trimiterea de functii ca parametru pentru alte functii. Am folosit un 
+vector de functii pe care l-am trimis functiei applyFunctions impreuna cu valoarea 
+asupra careia se aplica functiile.
+
+Pentru testare am facut o interfata in html in care utilizatorul poate selecta un 
+numar de functii si poate introduce un numar asupa caruia sa se aplice acestea. 
+Valorile rezultate sunt afisate in interfata.  
