@@ -1,20 +1,37 @@
-
+/*
+   Functie care aplica o serie de functii asupra unui numar. Functia intoarce un vector de numere intregi (rezultatele)
+   i - parametrul asupra cariua se aplica functiile
+   functions - un vector de functii care primesc un numar intreg si intorc tot un numar intreg
+ */
 function applyFunctions(i, functions) {
     var results = [];
-    for (var j = 0; j < functions.length; j++) {
-        results[j] = functions[j](i);
+    try{                                               
+        if(isNaN(i)){
+            throw "Parameter is not a number";
+        }
+        for (var j = 0; j < functions.length; j++) {
+            results[j] = functions[j](i);
+        }
     }
+        catch (err){
+             return [];
+        }
     return results;
 }
-
+/*
+    functie care preia datele introduse in formular si apeleaza functia applyFunctions
+    introduce mai apoi in codul html rezultatele
+ */
 function mainFunction() {
     var selected = [];
     var i = 0;
-    var n = parseInt(document.getElementById("no").value);
+    var n = parseInt(document.getElementById("no").value, 10);
+    var codHtml = '';
     if (isNaN(n)) {
-        var html = 'Introduceti o valoare numerica';
-        $('#results').html(html);
-    } else {
+     codHtml = 'Introduceti o valoare numerica!';
+     $('#response').hide();
+     $('#results').html(codHtml);
+     } else {
         if (document.getElementById("add_one").checked) {
             selected[i] = add_one;
             i++;
@@ -40,18 +57,19 @@ function mainFunction() {
             i++;
         }
         var results = applyFunctions(n, selected);
-        var html = '';
-        for (var i = 0; i < results.length; i++) {
-            html += results[i];
+        for (i = 0; i < results.length; i++) {
+            codHtml += results[i];
             if (i !== results.length - 1) {
-                html += ', ';
+                codHtml += ', ';
             }
         }
-        $('#results').html(html);
+        $('#results').html(codHtml);
         $('#response').show();
-    }
+     }
 }
-
+/*
+    serie de functii folosite pentru testare
+ */
 function add_one(n) {
     var m = n + 1;
     return m;
